@@ -19,6 +19,12 @@ Then...
 
     Import-Module PSComplexNumbers
     
+If your console font doesn't support Unicode characters you can use
+
+    Import-Module PSComplexNumbers -ArgumentList $true 
+    
+to enable basic ASCII symbols on load.
+    
 ## Requirements
 Powershell Version 2
 
