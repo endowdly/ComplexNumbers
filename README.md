@@ -35,7 +35,7 @@ Powershell 5.0 will already have System.Numerics loaded. Currently working on a 
 ## What are Complex Numbers? 
 Complex numbers are a convenient way to represent an extension of the one-dimensional number line to a two-dimensional plane.
 
-Numbers are commonly represented by _a_ + _bi_, where _i_ satisfies _i_^2 = -1
+Numbers are commonly represented by _a_ + _bi_, where _i_ satisfies _i_<sup>2</sup> = -1
 
 They have a use in fields such as mathmatics, physics, chemistry, biology, economics, statics, and can be heavily found in electrical engineering. 
 
