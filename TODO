@@ -1,0 +1,1 @@
+add detector to loadNumerics.ps1 that only attempts to load System.Numerics if it isn't already. Skip on Unix Releases. 
