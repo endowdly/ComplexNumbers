@@ -28,10 +28,6 @@ to enable basic ASCII symbols on load.
 ## Requirements
 Powershell Version 2
 
-### Note for Versions higher than 5 or Unix releases
-loadNumerics.ps1 will throw a couple errors. Just ignore these, as the public functions will work just fine. 
-Powershell 5.0 will already have System.Numerics loaded. Currently working on a detector that will skip the unnecessary load. 
-
 ## What are Complex Numbers? 
 Complex numbers are a convenient way to represent an extension of the one-dimensional number line to a two-dimensional plane.
 
