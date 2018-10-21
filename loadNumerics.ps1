@@ -1,5 +1,5 @@
 ﻿# We need to do the following because Reflection.Assembly is deprectiated :(
-# But, it is used as a final back up
+# But, it is used as a final back u
 
 $Success = "ComplexNumbers -> System.Numerics Assembly loaded!"
 $Failure = "ComplexNumbers -> System.Numerics Assembly load failed!" 
@@ -16,7 +16,7 @@ $FromAssemblyDirectory = @{
 }
 $TryToAddType = {
     try {
-        $objAssem = Add-Type -Path $_ -PassThru -ErrorAction SilentlyContinue
+        $script:ObjAssem = Add-Type -Path $_ -PassThru -ErrorAction SilentlyContinue
         Write-Verbose $Success
     }
     catch {
@@ -27,7 +27,7 @@ $TryToAddType = {
 # --- Xeq 
 if ($PSVersionTable.PSVersion.Major -lt 5) {
     try { 
-        $objAssem = Add-Type @NumericsAssembly
+        $ObjAssem = Add-Type @NumericsAssembly
         Write-Verbose $Success
     } 
     catch { 
@@ -36,7 +36,7 @@ if ($PSVersionTable.PSVersion.Major -lt 5) {
     }
     finally { 
 
-        if ($objAssem) {
+        if ($ObjAssem) {
             Write-Verbose $Success
         }
         else {
