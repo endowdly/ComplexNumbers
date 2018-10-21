@@ -16,7 +16,7 @@ $FromAssemblyDirectory = @{
 }
 $TryToAddType = {
     try {
-        $script:ObjAssem = Add-Type -Path $_ -PassThru -ErrorAction SilentlyContinue
+        $objAssem = Add-Type -Path $_ -PassThru -ErrorAction SilentlyContinue
         Write-Verbose $Success
     }
     catch {
@@ -27,7 +27,7 @@ $TryToAddType = {
 # --- Xeq 
 if ($PSVersionTable.PSVersion.Major -lt 5) {
     try { 
-        $ObjAssem = Add-Type @NumericsAssembly
+        $objAssem = Add-Type @NumericsAssembly
         Write-Verbose $Success
     } 
     catch { 
@@ -36,7 +36,7 @@ if ($PSVersionTable.PSVersion.Major -lt 5) {
     }
     finally { 
 
-        if ($ObjAssem) {
+        if ($objAssem) {
             Write-Verbose $Success
         }
         else {
