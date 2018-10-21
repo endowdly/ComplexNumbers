@@ -1,5 +1,5 @@
 ﻿# We need to do the following because Reflection.Assembly is deprectiated :(
-# But, it is used as a final back u
+# But, it is used as a final back up
 
 $Success = "ComplexNumbers -> System.Numerics Assembly loaded!"
 $Failure = "ComplexNumbers -> System.Numerics Assembly load failed!" 
